@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/styles.index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorveteria🍨</title>
+</head>
+<body>
+    <main>
+        <div id="inputs-area">
+            <h2>Cadastro de Pedidos</h2>
+            <input type="text" placeholder="Cliente" id="client">
+            <input type="number" placeholder="Mesa" id="table">
+            <input type="text" placeholder="Descrição" id="description">
+            <button onclick="criarPedido()" id="btnCriar">Cadastrar</button>
+            <button onclick="editarPedido()" class="hidden" id="btnAtualizar">Editar</button>
+            <p id="msg"></p>
+        </div>
+        <div id="table-area">
+            <h2 >Lista de Pedidos - <h2 id="amount">0</h2></h2>
+            <div id="request-area"></div>
+        </div>
+    </main>
+    <script src="./assets/js/script.index.js"></script>
+</body>
+</html>
